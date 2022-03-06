@@ -2,7 +2,6 @@
 #include <cstdint>
 #include "alg.h"
 
-
 double pown(double value, uint16_t n) {
     if (n == 0) {
         return 1;
@@ -39,7 +38,7 @@ double sinn(double x, uint16_t count) {
         return x;
     }
     double result_sin = 0;
-    for (int n = ,count; n > 0; n--) {
+    for (int n = count; n > 0; n--) {
         result_sin += (pown((-1), n - 1))*((pown(x, 2 * n - 1))
             /(fact(2 * n - 1)));
     }
