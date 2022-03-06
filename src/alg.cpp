@@ -1,7 +1,5 @@
 // Copyright 2022 NNTU-CS
 #include <cstdint>
-#include <cmath>
-#include <iostream>
 #include "alg.h"
 
 
@@ -29,7 +27,7 @@ double calcItem(double x, uint16_t n) {
 }
 
 double expn(double x, uint16_t count) {
-    double result_ex = 0;
+    double result_ex = 1;
     for (int n = 0; n < count; n++) {
         result_ex += pown(x, n) / fact(n);
     }
